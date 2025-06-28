@@ -1,18 +1,18 @@
 // 1
-const user = {
+const user1 = {
   name: "Ivan",
   hobby: "reading",
   premium: true,
 };
-user.mood = "happy";
-user.hobby = "skydiving";
-user.premium = false;
-for (const key of Object.keys(user)) {
-  console.log(`${key}: ${user[key]}`);
+user1.mood = "happy";
+user1.hobby = "skydiving";
+user1.premium = false;
+for (const key of Object.keys(user1)) {
+  console.log(`${key}: ${user1[key]}`);
 }
 
 // 2
-const user = {
+const user2 = {
   name: "John",
   age: 30,
   hobby: "reading",
@@ -21,7 +21,7 @@ const user = {
 function countProps(obj) {
   return Object.keys(obj).length;
 }
-console.log(countProps(user));
+console.log(countProps(user2));
 
 // 3
 const teem = {
@@ -102,10 +102,10 @@ const products1 = [
   },
 ];
 
-console.log(getAllPropValues(products, "name"));
-console.log(getAllPropValues(products, "price"));
+console.log(getAllPropValues(products1, "name"));
+console.log(getAllPropValues(products1, "price"));
 console.log(
-  getAllPropValues(products, "category")
+  getAllPropValues(products1, "category")
 );
 // 6
 const products2 = [
@@ -128,7 +128,7 @@ function calculateTotalPrice(
   return totalPrice;
 }
 const totalApplePrice = calculateTotalPrice(
-  products,
+  products1,
   "яблуко"
 );
 console.log(totalApplePrice);
